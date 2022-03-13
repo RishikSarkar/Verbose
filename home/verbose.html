@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Verbose</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel=”stylesheet” href=”https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css”>
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:100,200,350,400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,350,400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Avenir:100,200,350,400,500" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--script src="css/main.js" defer></script-->
+    <link rel="stylesheet" href="C:/Users/rishi/Documents/Web Dev/verbose/home/css/style.css">
+  </head>
+  <body>
+    <!-- Navigation Panel -->
+    <div class="topnav w3-bar w3-indigo"> <!-- w3-indigo is #3F51B5 -->
+      <span class="branding w3-bar-item w3-mobile"><img src="C:/Users/rishi/Documents/Web Dev/verbose/home/img/verbose_logo.PNG" height="30">&nbsp verbose</span>
+      <span class="w3-right w3-mobile">
+        <a href="#login" class="loginbutton w3-button w3-bar-item w3-hover-text-light-blue w3-hover-indigo w3-round-large">Login</a>
+        &nbsp
+        <a onclick="document.getElementById('start-modal').style.display='block'" class="signupbutton w3-button w3-bar-item w3-hover-text-light-blue
+        w3-hover-indigo w3-round-large">Sign up</a>
+        <div class="w3-dropdown-hover">
+          <a href="#courses"><button class="coursesbutton w3-button w3-indigo w3-hover-text-light-blue w3-hover-indigo w3-round-large">Courses</button></a>
+          <div class="dropdown w3-text-shadow w3-dropdown-content w3-bar-block w3-card-4 w3-indigo">
+            <a href="#biology" class="w3-bar-item w3-button w3-hover-indigo w3-hover-text-green w3-round-large"><span>Biology</span></a>
+            <a href="#chemistry" class="w3-bar-item w3-button w3-hover-indigo w3-hover-text-blue w3-round-large"><span>Chemistry</span></a>
+            <a href="#computerscience" class="w3-bar-item w3-button w3-hover-indigo w3-hover-text-light-green w3-round-large"><span>Computer Science</span></a>
+            <a href="#engineering" class="w3-bar-item w3-button w3-hover-indigo w3-hover-text-khaki w3-round-large"><span>Engineering</span></a>
+            <a href="#marketing" class="w3-bar-item w3-button w3-hover-indigo w3-hover-text-light-blue w3-round-large"><span>Marketing</span></a>
+            <a href="#mathematics" class="w3-bar-item w3-button w3-hover-indigo w3-hover-text-red w3-round-large"><span>Mathematics</span></a>
+            <a href="C:/Users/rishi/Documents/Web Dev/verbose/courses/philosophy/philosophy.html" class="w3-bar-item w3-button w3-hover-indigo w3-hover-text-cyan w3-round-large"><span>Philosophy</span></a>
+            <a href="#physics" class="w3-bar-item w3-button w3-hover-indigo w3-hover-text-orange w3-round-large"><span>Physics</span></a>
+            <a href="#psychology" class="w3-bar-item w3-button w3-hover-indigo w3-hover-text-pink w3-round-large"><span>Psychology</span></a>
+            <a href="#sociology" class="w3-bar-item w3-button w3-hover-indigo w3-hover-text-amber w3-round-large"><span>Sociology</span></a>
+            <a href="#statistics" class="w3-bar-item w3-button w3-hover-indigo w3-hover-text-teal w3-round-large"><span>Statistics</span></a>
+            <a href="#courses" class="allcoursebutton w3-bar-item w3-button w3-hover-indigo w3-hover-text-aqua w3-round-large">...</a>
+          </div>
+        </div>
+        <a href="#resources" class="resourcesbutton w3-button w3-hover-text-light-blue w3-hover-indigo w3-bar-item w3-round-large">Resources</a>
+        <input type="text" placeholder=" Search">
+      </span>
+    </div>
+    <!-- Site Info -->
+    <section class="siteinfo">
+      <div class="w3-container w3-center">
+        <h1 class="w3-text-shadow w3-animate-opacity">Redefine Learning</h1>
+        <hr>
+        <p class="w3-animate-opacity">Looking for help with classes? Verbose has your back. It's free, interactive,
+         online, and accessible with topics ranging from Mathematics to Philosophy. Sign up to join the community ASAP!</p>
+      </div>
+      <div class="btn-grp-1 w3-animate-opacity">
+        <button onclick="document.getElementById('start-modal').style.display='block'" class="w3-button w3-indigo w3-hover-text-light-blue w3-large
+        w3-hover-indigo w3-round-large">I want to learn</button>
+        <!--&nbsp;
+        &nbsp;-->
+        <!--button href="tutor" class="w3-button w3-indigo w3-large w3-hover-indigo w3-round-large">I want to teach</button-->
+      </div>
+    </section>
+    <!-- Divider -->
+    <section class="divider1">
+      <hr>
+      <svg main="curve" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 350"><path fill="#ADD8E6" fill-opacity="1" d="M0,96L120,80C240,
+        64,480,32,720,32C960,32,1200,64,1350,80L1440,96L1440,0L1350,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path></svg>
+    </section>
+    <!-- Jump to showcase -->
+    <div class="jumpshowcase">
+      <a href="#showcase">
+        <center><img src="C:/Users/rishi/Documents/Web Dev/verbose/home/img/chalk-scroll-down.png" width="90px" height="90px"></img></center>
+      </a>
+    </div>
+    <!-- What we do -->
+    <section class="showcase" id="showcase">
+      <div class="w3-container w3-center">
+        <h1 class="w3-animate-opacity">What we bring to the tablet</h1>
+        <hr>
+        <div class="container">
+          <div class="centered">
+            <!-- Point 1 -->
+            <div class="point1 w3-animate-opacity">
+              <div><img class="point1_img"></img></div>
+              <div class="point1_txt">
+                <h3 class="p1_title">- Self-paced Learning -</h3>
+                <span class="p1_txt"><h4><i>You'll be able to move at your own speed. Whether you grind multiple chapters of content during
+                  all-nighters or space it out during the day, we have it ready at your disposal. The ball is in your park.</i></h4></span>
+              </div>
+            </div>
+            &nbsp; &nbsp; &nbsp;
+            <!-- Point 2 -->
+            <div class="point2 w3-animate-opacity">
+              <div><img class="point2_img"></img></div>
+              <div class="point2_txt">
+                <h3 class="p2_title">- Inclusive Community -</h3>
+                <span class="p2_txt"><h4><i>We know how hard COVID hit students like us since 2020. That's why our platform ensures a welcoming
+                  and engaging community solely for learning. In other words: you're not alone!</i></h4></span>
+              </div>
+            </div>
+            &nbsp; &nbsp; &nbsp;
+            <!-- Point 3 -->
+            <div class="point3 w3-animate-opacity">
+              <div><img class="point3_img"></img></div>
+              <div class="point3_txt">
+                <h3 class="p3_title">- By Students for Students -</h3>
+                <span class="p3_txt"><h4><i>This platform is not only catered for students like you, but is also made by students. Our lessons
+                  guarantee a wide variety of topics taught by upperclassmen with trusted experience in their field.</i></h4></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--script>
+
+        /*var onScrollHandler = function()
+        {
+          var newPoint1 = point1_img.content;
+          var newPoint2 = point2_img.content;
+          var newPoint3 = point3_img.content;
+
+          var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+
+          if (scrollTop > 100) {
+             newPoint1 = "C:/Users/rishi/Documents/Web Dev/verbose/home/img/planner.png"
+          }
+          if (scrollTop > 200) {
+             newPoint1 = "C:/Users/rishi/Documents/Web Dev/verbose/home/img/holdhands.png"
+          }
+          if (scrollTop > 300) {
+             newPoint1 = "C:/Users/rishi/Documents/Web Dev/verbose/home/img/planner.png"
+          }
+
+          point1_img.content = newPoint1;
+        };
+
+        object.addEventListener ("scroll", onScrollHandler);*/
+
+        const p1Images = {
+          1:"C:/Users/rishi/Documents/Web Dev/verbose/home/img/planner.png",
+          2:"C:/Users/rishi/Documents/Web Dev/verbose/home/img/holdhands.png",
+          3:"C:/Users/rishi/Documents/Web Dev/verbose/home/img/diploma.png",
+          4:"C:/Users/rishi/Documents/Web Dev/verbose/home/img/planner.png",
+          5:"C:/Users/rishi/Documents/Web Dev/verbose/home/img/planner.png",
+        }
+
+        const p2Images = {
+          1:"C:/Users/rishi/Documents/Web Dev/verbose/home/img/holdhands.png",
+          2:"C:/Users/rishi/Documents/Web Dev/verbose/home/img/holdhands.png",
+          3:"C:/Users/rishi/Documents/Web Dev/verbose/home/img/holdhands.png",
+          4:"C:/Users/rishi/Documents/Web Dev/verbose/home/img/holdhands.png",
+          5:"C:/Users/rishi/Documents/Web Dev/verbose/home/img/holdhands.png",
+        }
+
+        const p3Images = {
+          1:"C:/Users/rishi/Documents/Web Dev/verbose/home/img/diploma.png",
+          2:"C:/Users/rishi/Documents/Web Dev/verbose/home/img/diploma.png",
+          3:"C:/Users/rishi/Documents/Web Dev/verbose/home/img/diploma.png",
+          4:"C:/Users/rishi/Documents/Web Dev/verbose/home/img/diploma.png",
+          5:"C:/Users/rishi/Documents/Web Dev/verbose/home/img/diploma.png",
+        }
+
+        const step = 30;
+
+        function trackScrollPosition()
+        {
+          const y = window.scrollY;
+          const label = Math.min(Math.floor(y/30) + 1, 20);
+
+          const image1 = p1Images[label];
+          const image2 = p2Images[label];
+          const image3 = p3Images[label];
+
+          $('.point1_img').css('content', `url("${image1}")`);
+          $('.point2_img').css('content', `url('${image2}')`);
+          $('.point3_img').css('content', `url('${image3}')`);
+        }
+
+      </script-->
+
+    </section>
+    <!-- Divider -->
+    <section class="divider2">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 250"><path fill="#ADD8E6" fill-opacity="1" d="M0,192L26.7,170.7C53.3,
+        149,107,107,160,112C213.3,117,267,171,350,176C373.3,181,427,139,480,138.7C533.3,139,
+        587,181,640,181.3C693.3,181,747,139,800,122.7C853.3,107,907,117,960,133.3C1013.3,149,1067,171,1120,186.7C1173.3,
+        203,1227,213,1280,197.3C1333.3,181,1387,139,1413,117.3L1440,96L1440,350L1413.3,350C1386.7,350,1333,350,1280,350C1226.7,
+        350,1173,350,1120,350C1066.7,350,1013,350,960,350C906.7,350,853,350,800,350C746.7,350,693,350,640,350C586.7,350,533,350,
+        480,350C426.7,350,373,350,350,350C266.7,350,213,350,160,350C106.7,350,53,350,27,350L0,350Z"></path></svg>
+    </section>
+    <!-- Jump to parallax -->
+    <div class="jumpparallax">
+      <a href="#parallax-container">
+        <center><img src="C:/Users/rishi/Documents/Web Dev/verbose/home/img/chalk-scroll-down.png" width="90px" height="90px"></img></center>
+      </a>
+    </div>
+    <!-- Parallax Section -->
+    <div class="parallax-container">
+      <div class="topbox"> <!--#ADD8E6-->
+        <h1 class="w3-animate-opacity w3-center" id="parallax-container">A Multidisciplinary Approach</h1>
+        <hr>
+        <a href="#business">
+          <div class="box1 w3-center" style="width: 25%; height:200px; float:left">
+            <h4>- Business -</h4>
+            <span class="box1_txt"><h5><i>We know how hard COVID hit students like us since 2020. That's why our platform ensures a welcoming
+              and engaging community solely for learning.</i></h5></span>
+          </div>
+        </a>
+        <a href="#humanities">
+          <div class="box2 w3-center" style="width: 25%; height:200px; float:left">
+            <h4>- Humanities -</h4>
+            <span class="box2_txt"><h5><i>We know how hard COVID hit students like us since 2020. That's why our platform ensures a welcoming
+              and engaging community solely for learning.</i></h5></span>
+          </div>
+        </a>
+      </div>
+      <div class="bottombox">
+        <a href="#stem">
+          <div class="box3 w3-center" style="width: 25%; height:200px; float:left">
+            <h4>- STEM -</h4>
+            <span class="box3_txt"><h5><i>We know how hard COVID hit students like us since 2020. That's why our platform ensures a welcoming
+              and engaging community solely for learning.</i></h5></span>
+          </div>
+        </a>
+        <a href="#social-sciences">
+          <div class="box4 w3-center" style="width: 25%; height:200px; float:left">
+            <h4>- Social Sciences -</h4>
+            <span class="box4_txt"><h5><i>We know how hard COVID hit students like us since 2020. That's why our platform ensures a welcoming
+              and engaging community solely for learning.</i></h5></span>
+          </div>
+        </a>
+      </div>
+      <div class="parallax">
+      </div>
+      <div class="coursesbutton2 w3-animate-opacity w3-center">
+        <a href="#courses"><span class="w3-button w3-indigo w3-hover-text-light-blue w3-large w3-hover-indigo w3-round-large">
+          Take me to Courses</span></a>
+      </div>
+    </div>
+    <!-- Divider -->
+    <section class="divider3">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 250"><path fill="#3F51B5" fill-opacity="1" d="M0,96L34.3,
+        117.3C68.6,139,137,181,206,181.3C274.3,181,343,139,411,128C480,117,549,139,617,160C685.7,181,754,203,823,
+        192C891.4,181,960,139,1029,138.7C1097.1,139,1166,181,1234,181.3C1302.9,181,1371,139,1406,117.3L1440,96L1440,
+        320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,
+        686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+    </section>
+    <!-- Jump to quotes -->
+    <div class="jumpquotes">
+      <a href="#quotes-container">
+        <center><img src="C:/Users/rishi/Documents/Web Dev/verbose/home/img/chalk-scroll-down.png" width="90px" height="90px"></img></center>
+      </a>
+    </div>
+    <!-- Quotes -->
+    <section class="quotes" id="quotes-container">
+      <h1 class="w3-animate-opacity">What our instructors have to say</h1>
+      <hr>
+      <div class="images-carousel w3-content">
+        <div>
+          <img class="images-slideshow w3-animate-opacity" src="C:/Users/rishi/Documents/Web Dev/verbose/home/img/cat1.jpg" style="width:696px;height:393px"></img>
+        </div>
+        <div>
+          <img class="images-slideshow w3-animate-opacity" src="C:/Users/rishi/Documents/Web Dev/verbose/home/img/dog1.jpg" style="width:696px;height:393px"></img>
+        </div>
+        <div>
+          <img class="images-slideshow w3-animate-opacity" src="C:/Users/rishi/Documents/Web Dev/verbose/home/img/cat2.jpg" style="width:696px;height:393px"></img>
+        </div>
+        <div>
+          <img class="images-slideshow w3-animate-opacity" src="C:/Users/rishi/Documents/Web Dev/verbose/home/img/dog2.jpg" style="width:696px;height:393px"></img>
+        </div>
+        <div>
+          <img class="images-slideshow w3-animate-opacity" src="C:/Users/rishi/Documents/Web Dev/verbose/home/img/cat3.jpg" style="width:696px;height:393px"></img>
+        </div>
+        <div>
+          <img class="images-slideshow w3-animate-opacity" src="C:/Users/rishi/Documents/Web Dev/verbose/home/img/dog3.jpg" style="width:696px;height:393px"></img>
+        </div>
+        <div>
+          <img class="images-slideshow w3-animate-opacity" src="C:/Users/rishi/Documents/Web Dev/verbose/home/img/cat4.jpg" style="width:696px;height:393px"></img>
+        </div>
+        <div>
+          <img class="images-slideshow w3-animate-opacity" src="C:/Users/rishi/Documents/Web Dev/verbose/home/img/dog4.jpg" style="width:696px;height:393px"></img>
+        </div>
+      </div>
+      &nbsp;
+      <div class="quotes-carousel w3-content">
+        <div>
+          <p class="quotes-slideshow w3-animate-opacity" style="width:693px;height:393px">
+            <i>Meow</i>
+          </p>
+        </div>
+        <div>
+          <p class="quotes-slideshow w3-animate-opacity" style="width:693px;height:393px">
+            <i>Woof</i>
+          </p>
+        </div>
+        <div>
+          <p class="quotes-slideshow w3-animate-opacity" style="width:693px;height:393px">
+            <i>Meow</i>
+          </p>
+        </div>
+        <div>
+          <p class="quotes-slideshow w3-animate-opacity" style="width:693px;height:393px">
+            <i>Woof</i>
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- JS Quotes -->
+    <script>
+      var images = 0;
+      var quotes = 0;
+      imagescarousel();
+      quotescarousel();
+
+      function imagescarousel()
+      {
+        var i;
+        var x = document.getElementsByClassName("images-slideshow");
+        for (i = 0; i < x.length; i++)
+        {
+          x[i].style.display = "none";
+        }
+        images++;
+        if (images > x.length)
+        {
+          images = 1
+        }
+        x[images-1].style.display = "block";
+        setTimeout(imagescarousel, 4000);
+      }
+
+      function quotescarousel()
+      {
+        var i;
+        var x = document.getElementsByClassName("quotes-slideshow");
+        for (i = 0; i < x.length; i++)
+        {
+          x[i].style.display = "none";
+        }
+        quotes++;
+        if (quotes > x.length)
+        {
+          quotes = 1
+        }
+        x[quotes-1].style.display = "block";
+        setTimeout(quotescarousel, 4000);
+      }
+    </script>
+    <!-- Divider -->
+    <section class="divider4">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ADD8E6" fill-opacity="1" d="M0,96L30,85.3C60,
+        75,120,53,180,90.7C240,128,300,224,360,229.3C420,235,480,149,540,128C600,107,660,149,720,170.7C780,192,840,192,900,170.7C960,
+        149,1020,107,1080,106.7C1140,107,1200,149,1260,154.7C1320,160,1380,128,1410,112L1440,96L1440,320L1410,320C1380,320,1320,320,
+        1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,
+        360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path></svg>
+    </section>
+    <!-- Jump to intro video -->
+    <div class="jumpintrovideo">
+      <a href="#intro-video">
+        <center><img src="C:/Users/rishi/Documents/Web Dev/verbose/home/img/chalk-scroll-down.png" width="90px" height="90px"></img></center>
+      </a>
+    </div>
+    <!-- Intro video -->
+    <section class="intro-video" id="intro-video">
+      <center><iframe src="C:/Users/rishi/Documents/Web Dev/verbose/home/img/placeholder.mp4" frameborder="0" allowfullscreen>
+      </iframe></center>
+    </section>
+    <!-- Divider -->
+    <section class="divider5">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ECF8F9" fill-opacity="1" d="M0,96L120,80C240,
+        64,480,32,720,42.7C960,53,1200,107,1320,133.3L1440,160L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,
+        320L0,320Z"></path></svg>
+    </section>
+    <!-- Jump to intro video -->
+    <div class="jumpsocials">
+      <a href="#socials">
+        <center><img src="C:/Users/rishi/Documents/Web Dev/verbose/home/img/chalk-scroll-down.png" width="90px" height="90px"></img></center>
+      </a>
+    </div>
+    <!-- Social media links -->
+    <section class="socials" id="socials">
+      <!--center-->
+      <div class="board">
+        <div class="yasmin">
+          <div class="y">
+            <img class="yasmin_img" src="C:/Users/rishi/Documents/Web Dev/verbose/home/img/tux-cat.jpg" title="Yasmin Khan"/>
+            <center><div class="yasmin_txt"><h2>Yasmin Khan<br>(Co-Founder/<br>Lead Instructor/<br>YouTube Director)</h2></div></center>
+          </div>
+        </div>
+        <div class="rishik">
+          <div class="r">
+            <img class="rishik_img" src="C:/Users/rishi/Documents/Web Dev/verbose/home/img/tux-dog.jpg" title="Rishik Sarkar"/>
+            <center><div class="rishik_txt"><h2>Rishik Sarkar<br>(Co-Founder/<br>Spokesperson/<br>Website Director)</h2></div></center>
+          </div>
+        </div>
+        <div class="jaclyn">
+          <div class="j">
+            <img class="jaclyn_img" src="C:/Users/rishi/Documents/Web Dev/verbose/home/img/tux-cat.jpg" title="Jaclyn Gordy"/>
+            <center><div class="jaclyn_txt"><h2>Jaclyn Gordy<br>(Treasurer/<br>Marketing Director)</h2></div></center>
+          </div>
+        </div>
+        <div class="olivier">
+          <div class="o">
+            <img class="olivier_img" src="C:/Users/rishi/Documents/Web Dev/verbose/home/img/tux-dog.jpg" title="Olivier Diegue"/>
+            <center><div class="olivier_txt"><h2>Olivier Diegue<br>(Financial Manager/<br>Outreach Coordinator)</h2></div></center>
+          </div>
+        </div>
+        <div class="val">
+          <div class="v">
+            <img class="val_img" src="C:/Users/rishi/Documents/Web Dev/verbose/home/img/tux-cat.jpg" title="Valeria Hernandez"/>
+            <center><div class="val_txt"><h2>Val Hernandez<br>(Executive Creative Director)</h2></div></center>
+          </div>
+        </div>
+        <div class="tonio">
+          <div class="t">
+            <img class="tonio_img" src="C:/Users/rishi/Documents/Web Dev/verbose/home/img/tux-dog.jpg" title="Antonio Saladin"/>
+            <center><div class="tonio_txt"><h2>Antonio Saladin<br>(Head Tutor/<br>Curriculum Coordinator)</h2></div></center>
+          </div>
+        </div>
+      </div>
+      <!--/center-->
+    </section>
+    <!-- Divider -->
+    <section class="divider6">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#3F51B5" fill-opacity="1" d="M0,64L120,101.3C240,139,
+        480,213,720,208C960,203,1200,117,1320,74.7L1440,32L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,
+        320,120,320L0,320Z"></path></svg>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <!-- Modal -->
+    <div class="w3-modal w3-animate-opacity" id="start-modal">
+      <div class="w3-modal-content">
+        <header class="w3-container w3-light-blue">
+          <span class="close" onclick="document.getElementById('start-modal').style.display='none'">&times</span>
+          <h2><center>Create an Account</center></h2>
+        </header>
+
+        <div class="w3-container">
+          <form>
+            <div class="w3-section">
+              <label>Name</label>
+              <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Name">
+              <label>Username</label>
+              <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Username">
+              <label>Password</label>
+              <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Password">
+              <label>Confirm Password</label>
+              <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Re-enter Password">
+              <button href="#submit" class="submit w3-indigo w3-btn-block w3-section w3-padding" onclick="document.getElementById
+              ('start-modal').style.display='none'">Submit</button>
+              <hr>
+              <a href="#login"><button class="existing w3-white w3-hover-text-indigo w3-btn-block w3-section w3-padding"
+              onclick="document.getElementById('start-modal').style.display='none'"><u>I already have an account</u></button></a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="w3-indigo w3-padding-xlarge w3-center">
+      <div class="missionstatement"><h1>Looking for help with classes? Verbose has your back. It's free, interactive,
+       online, and accessible with topics ranging from Mathematics to Philosophy. Sign up to join the community ASAP!</h1></div>
+      <div class="coursesrecap"><h2>Courses:</h2>
+        <a href="#biology" class="w3-hover-text-green">Biology</a>
+        &nbsp;
+        <a href="#chemistry" class="w3-hover-text-blue">Chemistry</a>
+        &nbsp;
+        <a href="#computerscience" class="w3-hover-text-light-green">Computer Science</a>
+
+        <a href="#engineering" class="w3-hover-text-khaki">Engineering</a>
+        &nbsp;
+        <a href="#marketing" class="w3-hover-text-light-blue">Marketing</a>
+        &nbsp;
+        <a href="#mathematics" class="w3-hover-text-red">Mathematics</a>
+        &nbsp;
+        <a href="#philosophy" class="w3-hover-text-cyan">Philosophy</a>
+        &nbsp;
+        <a href="#physics" class="w3-hover-text-orange">Physics</a>
+        &nbsp;
+        <a href="#psychology" class="w3-hover-text-pink">Psychology</a>
+        &nbsp;
+        <a href="#sociology" class="w3-hover-text-amber">Sociology</a>
+        &nbsp;
+        <a href="#statistics" class="w3-hover-text-teal">Statistics</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#courses" class="w3-hover-text-aqua">...</a>
+      </div>
+      <center><hr></center>
+      <p class="copyright w3-opacity">Verbose &copy; 2022</p>
+    </footer>
+  </body>
+</html>
