@@ -78,7 +78,7 @@ body{
 }
 
 .siteinfo{
-  background:url('../img/banner_3.0.png') repeat fixed 100%;
+  background:url('Verbose/home/img/banner_3.0.png') repeat fixed 100%;
   background-position:center;
   height: 630px;
   padding:140px 100px;
@@ -211,17 +211,17 @@ body{
 }
 
 .showcase .point1_img{
-  content: url("C:/Users/rishi/Documents/Web Dev/verbose/home/img/planner.png");
+  content: url("Verbose/home/img/planner.png");
   width: 300px;
 }
 
 .showcase .point2_img{
-  content: url("C:/Users/rishi/Documents/Web Dev/verbose/home/img/holdhands.png");
+  content: url("Verbose/home/img/holdhands.png");
   width: 280px;
 }
 
 .showcase .point3_img{
-  content: url("C:/Users/rishi/Documents/Web Dev/verbose/home/img/diploma.png");
+  content: url("Verbose/home/img/diploma.png");
   width: 300px;
 }
 
@@ -339,7 +339,7 @@ body{
 }
 
 .parallax{
-  background:url('../img/banner_3.0.png') repeat fixed 100%;
+  background:url('Verbose/home/img/banner_3.0.png') repeat fixed 100%;
   background-position:center;
   height: 400px;
   padding:140px 100px;
